@@ -1,0 +1,13 @@
+event.type
+event.target
+event.currentTarget
+----------------------
+click - bubbles
+dblclick - bubbles
+mousedown - bubbles
+mouseup - bubbles
+mouseover - bubbles
+mouseout - bubbles
+mousemove - bubbles
+mouseleave - doesn't bubble
+mouseenter - doesn't bubble
