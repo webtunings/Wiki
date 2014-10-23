@@ -1,13 +1,27 @@
 event.type
 event.target
 event.currentTarget
+event.clientX - wrt viewport
+event.clientY - wrt viewport
+event.screenX - wrt screen
+event.screenY - wrt screen
+event.altKey
+event.shiftKey
+event.ctrlKey
+event.relatedTarget A-->B
+event.button ->0 = right, 1 = middle, 2 = left
+//disable right click
+event.wheelDelta
 ----------------------
 click - bubbles
 dblclick - bubbles
 mousedown - bubbles
 mouseup - bubbles
-mouseover - bubbles
-mouseout - bubbles
 mousemove - bubbles
-mouseleave - doesn't bubble
+mouseover - bubbles
 mouseenter - doesn't bubble
+mouseout - bubbles
+mouseleave - doesn't bubble
+scrollup
+scrolldown
+mousewheel
