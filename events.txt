@@ -12,6 +12,12 @@ event.relatedTarget A-->B
 event.button ->0 = right, 1 = middle, 2 = left
 //disable right click
 event.wheelDelta
+
+event.keyCode - legacy but supported in all browsers
+event.key - standard but not widely implemented
+
+//for transitionend event
+event.elapsedTime
 ----------------------
 click - bubbles
 dblclick - bubbles
@@ -25,3 +31,11 @@ mouseleave - doesn't bubble
 scrollup
 scrolldown
 mousewheel
+
+keyup - event.keyCode a 65 (always uppercase)
+keydown - event.keyCode a 65 (always uppercase)
+keypress - event.keyCode a 97 (actual)
+//keypress is fired only for printable characters
+//TAB - only keydown, not keyup because focus generally shifts to next element
+
+transitionend
