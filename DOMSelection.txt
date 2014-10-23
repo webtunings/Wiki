@@ -1,0 +1,38 @@
+prototype chain
+---------------
+null
+Object.prototype
+Node | CSSStyleDeclarationObject | HTMLCollection | NodeList
+Node -> Element Document DocumentType
+Element -> HTMLElement HTMLDocument
+HTMLElement -> HTMLDivElement HTMLBodyElement
+
+
+document.getElementById
+//get the class
+Object.prototype.toString.call(element)
+//get the prototype
+Object.getPrototypeOf(element)
+
+document.getElementsByName -> NodeList
+NodeList objects are live
+NodeList - can be used like an array for iteration
+NodeList - readOnly array like object
+
+document.getElementsByTagName -> HTMLCollection -> in document ORDER
+this method is defined on Element as well as Document
+HTMLCollection = collection of element objects
+NodeList = collection of node objects
+
+document.getElementsByTagName('*') -> selects all HTML element objects
+
+document.head <head> HTMLHeadElement
+document.body <body> HTMLBodyElement
+document.documentElement <html> HTMLHtmlElement
+
+document.getElementsByClassName -> HTMLCollection
+
+document.querySelectorAll()
+//this method is defined on Document as well as Element
+
+
