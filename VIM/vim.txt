@@ -1,2 +1,3 @@
 :edit
 :set number
+.vimrc in home directory
