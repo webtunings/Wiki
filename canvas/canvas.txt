@@ -1,0 +1,120 @@
+beginPath() - creates a new path, resets current default path
+moveTo(x,y) - moves the cursor, creates a new subpath inside a path
+lineTo(x,y) - add point in the current subpath, doesn't create new subpath
+stroke() - strokes all subpaths of current path
+closePath() - closes the current subpath and starts a new subpath, ideally this should be closeSubpath()
+//context object works on current default path
+
+lineWidth - keep it even
+lineCap - butt, round, square
+lineJoin - miter, round, bevel
+
+fill - doesn't affect current path or subpath
+fillStyle - CSS color
+strokeStyle - CSS color
+
+fillRect(x,y,w,h) - doesn't affect current default path
+strokeRect(x,y,w,h) - doesn't affect current default path
+clearRect(x,y,w,h) - doesn't affect current default path
+
+arc(x,y,r,0,2*Math.PI,false) - affects current default path
+arcTo(x1,y1,x2,y2,r) - affects current default path
+quadraticCurveTo(x1,y1,x2,y2)
+bezierCurveTo(x1,y1,x2,y2,x3,y3)
+
+rect(x,y,w,h) - fill/stroke needs to be called, affects current default path
+
+translate(x,y)
+scale(x,y)
+rotate(angle)
+
+transform - a,b,c,d,e,f - cumulative
+setTransform - resets previous transform
+
+200200 - scale(2,2)
+011000 - reflection y=x axis
+100100 - default
+101100 - shear in x 
+102100 - 2 x shear in y
+110100 - shear in y
+120100 - 2 x shear in y
+122100 - 2 x shear x + 2 x shear y
+
+var lg = c.createLinerGradient(x1,y1,x2,y2) <-|--|--->
+lg.addColorStop(offset,color)
+
+var rg = c.createRadialGradient(x1,y1,x2,y2) // inner circle outer circle
+rg.addColorStop(offset,color)
+
+canvas.width
+canvas.height
+
+globalAlpha - 0 to 1
+globalCompositeOperation
+clip() - retrict the drawing region
+
+c.font - font for text - CSS font
+fillText(text,x,y,w)
+strokeText(text,x,y,w)
+textAlign - start,end,left,right,center, left=start, end=right at the x,y in fillText
+textBaseLine - alphabetic - default, p,q,y lower portion below x,y, top,bottom,middle,hanging,ideographic
+
+shadowColor - gradients and patterns are not allowed - CSS color - hsla - make a=0 shadow will disappear - shortcut
+shadowBlur - 20 - blurness
+shadowOffsetX = 10 -> could be negative
+shadowOffsetY = 10 -> could be negative
+shadow is applicable to any kind of shape - curve,text,rect - all
+
+drawImage(image,x,y) -> image is HTMLImageElement - x,y - starting point of image
+drawImage(image,x1,y1,w,h) -> scale up or down by setting w and h
+drawImage(image,cx,cy,cw,ch,px,py,pw,ph) -> start crop at cx,cy, crop width height is cw,ch, place at px,py with height pw,ph - could be scaled up or down by setting pw,ph
+
+clearRect(0,0,canvas.width,canvas.height) -> clear complete canvas
+
+event.clientX - viewport mouse position
+canvas.getBoundingClientRect().left - viewport canvas left
+canvas coordinate = event.clientX - canvas.getBoundingClientRect().left
+isPointInPath(x,y) - true if x,y is part of current default path
+
+strokeStyle = fillStyle = createPattern(img,"repeat")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

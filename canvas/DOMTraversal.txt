@@ -1,0 +1,16 @@
+Node:
+parentNode
+childNodes -> NodeList ->Live
+firstChild
+lastChild
+previousSibling
+nextSibling
+
+Element:
+firstElementChild
+lastElementChild
+childElementCount
+previousElementSibling
+nextElementSibling
+
+
