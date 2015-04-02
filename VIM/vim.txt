@@ -1,3 +1,5 @@
 :edit
 :set number
 .vimrc in home directory
+#command mode
+o - insert new line
