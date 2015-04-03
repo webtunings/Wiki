@@ -3,3 +3,20 @@
 .vimrc in home directory
 #command mode
 o - insert new line
+
+#command mode line navigation
+G - goto last line
+1G - goto line number 1
+15G - goto line number 15
+:32 - goto line number 32
+
+
+#command mode delete
+x - delete character
+5x - delete 5 character
+dd - delete current line
+5dd - delete 5 lines
+d$ - delete to end of line
+d^ - delete to beginning of line
+db - delete word backward
+dw - delete word from cursor on
