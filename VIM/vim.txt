@@ -22,3 +22,6 @@ db - delete word backward
 dw - delete word from cursor on
 :d - delete current line
 :5d - delete fifth line
+
+#save
+:w <file name>
