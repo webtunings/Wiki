@@ -20,3 +20,5 @@ d$ - delete to end of line
 d^ - delete to beginning of line
 db - delete word backward
 dw - delete word from cursor on
+:d - delete current line
+:5d - delete fifth line
