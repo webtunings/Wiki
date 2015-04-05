@@ -28,3 +28,11 @@ dw - delete word from cursor on
 :q Quit Vim. This fails when changes have been made.
 :q! Quit without writing.
 :wq write and quit
+
+#insertion mode
+i - insert text before the cursor
+I - insert @ beginning of line
+a - append text after the cursor
+A - insert @ end of line
+o - insert/open a new line after the current line
+O - insert/open a new line before the current line
