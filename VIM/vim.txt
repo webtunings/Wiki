@@ -25,3 +25,6 @@ dw - delete word from cursor on
 
 #save
 :w <file name>
+:q Quit Vim. This fails when changes have been made.
+:q! Quit without writing.
+:wq write and quit
