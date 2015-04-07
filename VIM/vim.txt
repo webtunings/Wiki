@@ -41,3 +41,11 @@ O - insert/open a new line before the current line
 r - replace character at cursor position
 R - replace mode
 
+#movement
+w - move cursor a word (first non-alphanumeric)
+W - move cursor a word (first space delimited)
+b - move cursor back a word ( first non-alphanumeric)
+B - move cursor back a word ( white space delimited)
+e - move cursor to end of word (first non-alphanumeric)
+E - move cursor to end of word (white space delimited)
+
