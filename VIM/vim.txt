@@ -36,3 +36,8 @@ a - append text after the cursor
 A - insert @ end of line
 o - insert/open a new line after the current line
 O - insert/open a new line before the current line
+
+#replace
+r - replace character at cursor position
+R - replace mode
+
